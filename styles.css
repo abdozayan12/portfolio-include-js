@@ -502,7 +502,7 @@
     list-style-type: none;
   }
 
-  .nav-menu {
+  .new {
     position: fixed;
     left: -100%;
     top: 60px;
@@ -513,9 +513,16 @@
     text-align: left;
   }
 
-  .nav-menu.active {
+  .new.active {
     left: 0;
     height: 100%;
+    background-color: #6070ff;
+    top: 0;
+    opacity: 0.95;
+  }
+
+  .nav-menu {
+    margin-top: 70px;
   }
 
   .humburger {
@@ -538,10 +545,12 @@
 
   .humburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
+    background-color: #fff;
   }
 
   .humburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+    background-color: #fff;
   }
 
   a:hover {
@@ -551,10 +560,45 @@
   #navbar ul a {
     padding: 4px;
     margin: 0 10px;
-    color: #344563;
+    color: #fff;
     font-size: 32px;
     font-weight: 600;
     text-decoration: none;
+  }
+
+  .lang li {
+    background-color: #ebebff;
+    border-radius: 10px;
+    color: #6070ff;
+    padding: 4px 12px;
+    margin-bottom: 6%;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .listItem li {
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6b778c;
+    margin-left: 20px;
+  }
+
+  .listItem li:first-child {
+    font-weight: 500;
+    color: #344563;
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  .languag .fLi li {
+    padding: 5px;
+    width: 25%;
+  }
+
+  #navbar ul li {
+    list-style-type: none;
+    margin-left: 20px;
   }
 
   .logo {
@@ -660,31 +704,6 @@
     list-style-type: disc;
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .lang li {
-    background-color: #ebebff;
-    border-radius: 10px;
-    color: #6070ff;
-    padding: 4px 12px;
-    margin-bottom: 6%;
-    font-size: 12px;
-    font-weight: 500;
-  }
-
-  .listItem li {
-    margin-right: 5px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #6b778c;
-    margin-left: 20px;
-  }
-
-  .listItem li:first-child {
-    font-weight: 500;
-    color: #344563;
-    list-style-type: none;
-    margin-left: 0;
   }
 
   .list {
@@ -841,11 +860,6 @@
   .languag .fLi {
     display: none;
     flex-direction: row;
-  }
-
-  .languag .fLi li {
-    padding: 5px;
-    width: 25%;
   }
 
   .languag li img {
