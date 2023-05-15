@@ -513,9 +513,9 @@
     text-align: left;
   }
 
-.nav-menu.active {
-  left: 0;
-}
+  .nav-menu.active {
+    left: 0;
+  }
 
   .humburger {
     cursor: pointer;
@@ -523,18 +523,17 @@
     color: #6070ff;
   }
 
-  .humburger.active.bar::nth-child(2){
+  .humburger.active .bar::nth-child(2){
     opacity: 0;
   }
 
-  .humburger.active.bar::nth-child(1){
+  .humburger.active .bar::nth-child(1){
     transform: translateY(8px) rotate(45deg);
   }
 
-  .humburger.active.bar::nth-child(3){
+  .humburger.active .bar::nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
   }
-
 
   .bar {
     display: block;
