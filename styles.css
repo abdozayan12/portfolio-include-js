@@ -396,7 +396,7 @@
   }
 
   .languag .fLi img {
-    size: 10%;
+    width: 10%;
   }
 
   .bgWhite {
@@ -528,9 +528,9 @@
     background-color: #6070ff;
   }
 
-.nav-menu.active {
-  left: 0;
-}
+  .nav-menu.active {
+    left: 0;
+  }
 
   a:hover {
     color: cyan;
@@ -841,7 +841,7 @@
   }
 
   .languag .fLi img {
-   size: 10%;
+    width: 10%;
   }
 
   .bgWhite {
