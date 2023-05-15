@@ -535,7 +535,7 @@
   .humburger.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
   }
-
+  
   .bar {
     display: block;
     width: 25px;
@@ -552,8 +552,8 @@
     padding: 4px;
     margin: 0 10px;
     color: #344563;
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 600;
     text-decoration: none;
   }
 
