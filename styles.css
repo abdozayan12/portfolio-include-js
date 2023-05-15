@@ -83,12 +83,6 @@
     border: 2px solid red;
   }
 
-  /* .boxHeader .boxHead {
-    margin-bottom: 20px;
-    padding: 20% 7% 0 7%;
-    border: solid darkblue 1px;
-  } */
-
   .boxHead h1 {
     font-weight: 700;
     font-size: 48px;
@@ -225,8 +219,6 @@
   .canopy {
     font-size: 18px;
     font-weight: 500;
-
-    /* line-height: 16px; */
     text-align: left;
     color: #344563;
   }
@@ -244,8 +236,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-
-    /* text-align: left; */
     margin: 7px 0;
     color: #344563;
   }
@@ -255,15 +245,7 @@
     flex-wrap: wrap;
     list-style-type: none;
     text-decoration: none;
-
-    /* padding-left: 0; */
-
-    /* margin-right: 10px; */
     gap: 2%;
-
-    /* font-family: 'Poppins', sans-serif; */
-
-    /* font-style: normal; */
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.03em;
@@ -287,6 +269,24 @@
     background-color: #396df2;
     transform: scale(1.1);
     cursor: pointer;
+  }
+
+  .project {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: #091e42 solid 1px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 80%;
+  }
+
+  .project-header {
+    padding: 10px 15px;
+    display: flex;
+
   }
 
   .buttonButton2 {
