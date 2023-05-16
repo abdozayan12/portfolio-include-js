@@ -522,7 +522,11 @@
   }
 
   .nav-menu {
-    margin-top: 70px;
+    margin-top: 80px;
+  }
+
+  .nav-item {
+    margin-top: 20px;
   }
 
   .humburger {
