@@ -272,6 +272,7 @@
   }
 
   .project {
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -280,13 +281,59 @@
     border: #091e42 solid 1px;
     border-radius: 15px;
     width: 100%;
-    max-width: 80%;
+    max-width: 90%;
   }
 
   .project-header {
-    padding: 10px 15px;
+    padding: 5px 15px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .project-header .close {
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 2rem;
+  }
+
+  .project .project-listItems {
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  .project-body {
+    display: grid;
+    grid-template-columns: 70% 28%;
+    gap: 2%;
+    padding: 10px 10px 45px 10px;
+  }
+
+  .see {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-align: center;
+    width: 118px;
+    color: #396df2;
+    background-color: white;
+    border: #396df2 solid 2px;
+    border-radius: 10px;
+    height: 40px;
+    transition-duration: 0.5s;
+    padding: 0;
+  }
+
+  .see img {
+    width: 10%;
+  }
+
+  .see:hover {
+    color: white;
+    background-color: #3f4148;
   }
 
   .buttonButton2 {
