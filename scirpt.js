@@ -24,3 +24,30 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+// preserve data in the browser//
+
+const Name = document.getElementById('name');
+const emailEl = document.getElementById('email');
+const Text = document.getElementById('textArea');
+
+function save () {
+  var data;
+  if (localstorage.getItem('data') == null){
+    data = [];
+  }
+  else {
+    data = JSON.parse(localStorage.getItem("data"));
+  }
+
+}
+
+// To Be Used // 
+window.addEventListener('storage', function(e) {
+  document.querySelector('.my-key').textContent = e.key;
+  document.querySelector('.my-old').textContent = e.oldValue;
+  document.querySelector('.my-new').textContent = e.newValue;
+  document.querySelector('.my-url').textContent = e.url;
+  document.querySelector('.my-storage').textContent = JSON.stringify(e.storageArea);
+});
+
