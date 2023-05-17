@@ -47,6 +47,8 @@ open.addEventListener('click', () => {
   });
 });
 
+// nav menu //
+
 humburger.addEventListener('click', () => {
   humburger.classList.toggle('active');
   navMenu.classList.toggle('active');
