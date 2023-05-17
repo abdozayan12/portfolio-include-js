@@ -1,10 +1,10 @@
 const humburger = document.querySelector('.humburger');
 const navMenu = document.querySelector('.new');
 const body = document.querySelector('body');
-const open = document.querySelector('.buttonButton1')
+const open = document.querySelector('.buttonButton1');
 open.addEventListener('click', () => {
-const htm = document.createElement('div');
-htm.innerHTML = `
+  const htm = document.createElement('div');
+  htm.innerHTML = `
 <div class="modal" id="modal">
                         <div class="modal-header">
                                 
@@ -39,17 +39,13 @@ htm.innerHTML = `
                         </div>
                     </div>
                     <div id="overlay"></div>
-`
-body.appendChild(htm);
-const close = document.querySelector('.close-button');
-close.addEventListener('click', () => {
-  body.removeChild(htm);
-})
-})
-
-
-
-
+`;
+  body.appendChild(htm);
+  const close = document.querySelector('.close-button');
+  close.addEventListener('click', () => {
+    body.removeChild(htm);
+  });
+});
 
 humburger.addEventListener('click', () => {
   humburger.classList.toggle('active');
@@ -60,7 +56,3 @@ document.querySelectorAll('.nav-links').forEach((n) => n.addEventListener('click
   humburger.classList.remove('active');
   navMenu.classList.remove('active');
 }));
-
-
-
-
