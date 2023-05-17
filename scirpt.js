@@ -13,7 +13,7 @@ document.querySelectorAll('.nav-links').forEach((n) => n.addEventListener('click
 
 // validate Email //
 
-const form = document.querySelector('.form');
+const form = document.querySelector('.form1');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const emailel = document.getElementById('email').value;
