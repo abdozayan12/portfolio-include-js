@@ -16,7 +16,7 @@ const projectsData = [
   },
   {
     id: '02',
-    name: 'Tonia 2',
+    name: 'Tonia',
     role: 'Developer',
     platform: 'Web',
     year: '2022',
@@ -31,7 +31,7 @@ const projectsData = [
   },
   {
     id: '03',
-    name: 'Tonia 3',
+    name: 'Tonia',
     role: 'Developer',
     platform: 'Web',
     year: '2022',
@@ -46,7 +46,7 @@ const projectsData = [
   },
   {
     id: '04',
-    name: 'Tonia 4',
+    name: 'Tonia',
     role: 'Developer',
     platform: 'Web',
     year: '2022',
@@ -60,28 +60,20 @@ const projectsData = [
     linkToSource: '#',
   }];
 
-  // for (let i = 0; i < projectsData.length; i++) {
-  //   const element = projectsData[i];
-  //   console.log(element);
-  // }
-  // projectsData.forEach(project => {
-  //   console.log(project);
-  // });
+const project = document.querySelector('#project');
+const displayPopup = document.querySelector('#display-popup');
 
-  const project = document.querySelector('#project');
-  const displayPopup = document.querySelector('#display-popup');
-  
-  const generateTechnologyTags = (technologies) => {
-    const html = technologies
-      .map((technology) => `<li>${technology}</li>`)
-      .join('\n');
-    return html;
-  };
+const generateTechnologyTags = (technologies) => {
+  const html = technologies
+    .map((technology) => `<li>${technology}</li>`)
+    .join('\n');
+  return html;
+};
 
-  let output = " ";
-  let popup = " ";
-  projectsData.forEach(project => {
-    output+= `
+let output = ' ';
+const popup = ' ';
+projectsData.forEach((project) => {
+  output += `
       <section class="grid-container">
         <div class="grid-item0">
             <img src="${project.featuredImage}" alt="portfolio 1">
@@ -95,30 +87,30 @@ const projectsData = [
             </ul>
             <p class="firstPara">${project.description}</p>
             <ul class="lang">
-              ${generateTechnologyTags (project.technologies)}
+              ${generateTechnologyTags(project.technologies)}
             </ul>
             <button id="open-project-popup-${project.id}" class="buttonButton1">See Project</button>
         </div>
       </section>
     `;
-  });
+});
 
-  project.innerHTML = output;
+project.innerHTML = output;
 
-  const generateProjectPopUps = (projectDetails) => {
-    const {
-      name,
-      role,
-      platform,
-      year,
-      descriptionlong,
-      featuredImage,
-      technologies,
-      linkToLiveVersion,
-      linkToSource,
-    } = projectDetails;
-  
-    return `
+const generateProjectPopUps = (projectDetails) => {
+  const {
+    name,
+    role,
+    platform,
+    year,
+    descriptionlong,
+    featuredImage,
+    technologies,
+    linkToLiveVersion,
+    linkToSource,
+  } = projectDetails;
+
+  return `
     <div class="container">
     <div class="modal-card">
         <div class="popup-card-header">
@@ -135,48 +127,48 @@ const projectsData = [
             <p class="firstPara">${descriptionlong}</p>
             <div class="modal-footer">
                 <ul class="lang">
-                ${generateTechnologyTags (technologies)}
+                ${generateTechnologyTags(technologies)}
                 </ul>
                 <div class="btn-group">
-                    <a href="${linkToLiveVersion}" class="buttonButton1">See Project</a>
-                    <a href="${linkToSource}" class="buttonButton1">See Project</a>
+                    <a href="${linkToLiveVersion}" class="buttonpop">See live</a>
+                    <a href="${linkToSource}" class="buttonpop">See source</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
   `;
-  };
+};
 
-  const handleModalOpen = (id) => {
-    const selectedProject = projectsData.find((project) => project.id === id);
-    const html = generateProjectPopUps(selectedProject);
-    displayPopup.innerHTML = html;
-    displayPopup.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-  };
+const handleModalOpen = (id) => {
+  const selectedProject = projectsData.find((project) => project.id === id);
+  const html = generateProjectPopUps(selectedProject);
+  displayPopup.innerHTML = html;
+  displayPopup.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+};
 
-  project.addEventListener('click', (e) => {
-    e.preventDefault();
-  
-    const { id } = e.target;
-    if (id.startsWith('open-project-popup-')) {
-      const projectId = id.split('-')[3];
-      handleModalOpen(projectId);
-    }
-  });
+project.addEventListener('click', (e) => {
+  e.preventDefault();
 
-  displayPopup.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (e.target.id === 'close-modal-popup') {
-      displayPopup.style.display = 'none';
-      document.body.style.overflow = 'auto';
-    }
-  });
+  const { id } = e.target;
+  if (id.startsWith('open-project-popup-')) {
+    const projectId = id.split('-')[3];
+    handleModalOpen(projectId);
+  }
+});
 
-  window.onclick = (e) => {
-    if (e.target === displayPopup) {
-      displayPopup.style.display = 'none';
-      document.body.style.overflow = 'auto';
-    }
-  };
+displayPopup.addEventListener('click', (e) => {
+  e.preventDefault();
+  if (e.target.id === 'close-modal-popup') {
+    displayPopup.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+});
+
+window.onclick = (e) => {
+  if (e.target === displayPopup) {
+    displayPopup.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+};

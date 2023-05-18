@@ -1,4 +1,4 @@
-import {projectsData} from './data.js';
+import { projectsData } from './data.js';
 
 // console.log(projectData);
 
