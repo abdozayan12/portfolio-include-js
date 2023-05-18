@@ -16,6 +16,15 @@ document.querySelectorAll('.nav-links').forEach((n) => n.addEventListener('click
 const form = document.querySelector('.form1');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
+  const fd = new FormData(form);
+  for (item of fd){
+    console.log(item);
+  }
+  
+  // const obj = object.fromEntries(fd);
+  // const json = JSON.stringify(obj);
+  // localStorage.setItem('form', json);
+
   const emailel = document.getElementById('email').value;
   const valid = document.querySelector('.invalid');
   if (emailel !== emailel.toLowerCase()) {
