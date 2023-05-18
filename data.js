@@ -130,7 +130,7 @@ const generateProjectPopUps = (projectDetails) => {
                 </ul>
                 </div>
             <div class="modal-footer">
-            <p class="firstPara">${descriptionlong}</p>
+            <p class="secondPara">${descriptionlong}</p>
                 <div class="btn-group">
                     <a href="${linkToLiveVersion}" class="buttonpop">See live</a>
                     <a href="${linkToSource}" class="buttonpop">See source</a>

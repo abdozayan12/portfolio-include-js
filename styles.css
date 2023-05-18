@@ -240,6 +240,14 @@
     color: #344563;
   }
 
+  .secondPara {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 7px 0;
+    color: #344563;
+  }
+
   .lang {
     display: flex;
     flex-wrap: wrap;
@@ -811,6 +819,10 @@
     color: #344563;
   }
 
+  .secondpara {
+    display: none;
+  }
+
   .lang {
     display: flex;
     flex-wrap: wrap;
@@ -1072,6 +1084,10 @@
   
   .modal i {
     cursor: pointer;
+  }
+
+  .modal-footer .secondPara {
+    display: none;
   }
 
   .modal .btn-group {
