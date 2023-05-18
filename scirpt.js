@@ -40,18 +40,28 @@ const Name = document.getElementById('name');
 const emailEl = document.getElementById('email');
 const Text = document.getElementById('textArea');
 
-function save () {
-  var data;
-  if (localstorage.getItem('data') == null){
-    data = [];
-  }
-  else {
-    data = JSON.parse(localStorage.getItem("data"));
-  }
 
-}
+form.addEventListener('click', () => {
+  const formData = {
+    name: document.getElementById('name').value,
+    emailEl: document.getElementById('email').value,
+    Text: document.getElementById('textArea').value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
 
-// To Be Used // 
+// function save () {
+//   var data;
+//   if (localstorage.getItem('data') == null){
+//     data = [];
+//   }
+//   else {
+//     data = JSON.parse(localStorage.getItem("data"));
+//   }
+
+// }
+
+// To Be Used  if one form input change // 
 window.addEventListener('storage', function(e) {
   document.querySelector('.my-key').textContent = e.key;
   document.querySelector('.my-old').textContent = e.oldValue;
@@ -60,3 +70,34 @@ window.addEventListener('storage', function(e) {
   document.querySelector('.my-storage').textContent = JSON.stringify(e.storageArea);
 });
 
+
+// check if exist get else update //
+if (!localStorage.getItem("bgcolor")) {
+  populateStorage();
+} else {
+  setStyles();
+}
+
+// example //
+function setStyles() {
+  const currentColor = localStorage.getItem("bgcolor");
+  const currentFont = localStorage.getItem("font");
+  const currentImage = localStorage.getItem("image");
+
+  document.getElementById("bgcolor").value = currentColor;
+  document.getElementById("font").value = currentFont;
+  document.getElementById("image").value = currentImage;
+
+  htmlElem.style.backgroundColor = `#${currentColor}`;
+  pElem.style.fontFamily = currentFont;
+  imgElem.setAttribute("src", currentImage);
+}
+
+// set value //
+function populateStorage() {
+  localStorage.setItem("bgcolor", document.getElementById("bgcolor").value);
+  localStorage.setItem("font", document.getElementById("font").value);
+  localStorage.setItem("image", document.getElementById("image").value);
+
+  setStyles();
+}
