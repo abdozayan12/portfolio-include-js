@@ -480,18 +480,18 @@
     overflow: auto;
     background-color: rgba(193, 199, 208, 0.85);
   }
-  
+
   .modal .container {
     max-width: 95%;
     margin: 0 auto;
     overflow: auto;
     padding: 0;
   }
-  
+
   .modal img {
     width: 100%;
   }
-  
+
   .modal .modal-card {
     background-color: #fff;
     border-radius: 24px;
@@ -499,7 +499,7 @@
     padding: 20px;
     margin: 10px;
   }
-  
+
   .modal .modal-details {
     display: grid;
     justify-content: space-between;
@@ -507,13 +507,13 @@
     grid-template-columns: 2fr 1fr;
     gap: 15px;
   }
-  
+
   .modal .popup-card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .modal i {
     cursor: pointer;
   }
@@ -522,7 +522,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 15px;
-}
+  }
 
   .modal .btn-group {
     border-top: 1px solid #c1c7d0;
@@ -533,6 +533,14 @@
     text-align: center;
     gap: 10px;
     margin-bottom: 51px;
+  }
+
+  .btn-group .bt-img {
+    display: flex;
+  }
+
+  .btn-group .bt-img img {
+    width: 10%;
   }
 
   .buttonpop {
@@ -546,6 +554,7 @@
     height: 41px;
     transition-duration: 0.5s;
     padding: 5px;
+    width: 140px;
   }
 
   .buttonpop:hover {
@@ -964,8 +973,6 @@
   .contactMe {
     color: #fff;
     padding-top: 103px;
-
-    /* margin: 24px; */
     text-align: center;
     font-family: "poppins", sans-serif;
     background-color: #396df2;
@@ -1061,11 +1068,11 @@
     overflow: auto;
     background-color: rgba(193, 199, 208, 0.85);
   }
-  
+
   .modal img {
     width: 100%;
   }
-  
+
   .modal .modal-card {
     background: #fff;
     border-radius: 16px;
@@ -1075,13 +1082,13 @@
     padding: 20px;
     margin: 10px;
   }
-  
+
   .modal .popup-card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .modal i {
     cursor: pointer;
   }
@@ -1099,15 +1106,25 @@
     gap: 10px;
   }
 
+  .btn-group .bt-img {
+    display: flex;
+  }
+
+  .btn-group .bt-img img {
+    width: 10%;
+  }
+
   .buttonpop {
-        font-size: 15px;
-        font-weight: 500;
-        color: #396df2;
-        background-color: white;
-        border: #396df2 solid 1px;
-        border-radius: 8px;
-        transition-duration: 0.5s;
-        padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #396df2;
+    background-color: white;
+    border: #396df2 solid 1px;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+    padding: 5px;
+    width: 140px;
+    text-align: center;
   }
 
   .buttonpop:hover {
