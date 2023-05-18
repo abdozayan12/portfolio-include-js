@@ -18,6 +18,7 @@ document.querySelectorAll('.nav-links').forEach((n) => n.addEventListener('click
 const form = document.querySelector('.form1');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
+
   const emailel = document.getElementById('email').value;
   const valid = document.querySelector('.invalid');
   if (emailel !== emailel.toLowerCase()) {
@@ -25,4 +26,4 @@ form.addEventListener('submit', (e) => {
   } else {
     form.submit();
   }
-});
+
