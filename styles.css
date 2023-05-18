@@ -496,7 +496,8 @@
     display: grid;
     justify-content: space-between;
     align-items: start;
-    grid-template-columns: 5fr 3fr
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
   }
   
   .modal .popup-card-header {
@@ -510,18 +511,20 @@
   }
 
   .modal .modal-footer {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 15px;
 }
 
   .modal .btn-group {
     border-top: 1px solid #c1c7d0;
     padding: 1rem 0;
-    display: flex;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    text-align: center;
     gap: 10px;
+    margin-bottom: 51px;
   }
 
   .buttonpop {

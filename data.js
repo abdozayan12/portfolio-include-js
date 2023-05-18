@@ -125,18 +125,18 @@ const generateProjectPopUps = (projectDetails) => {
         <img src="${featuredImage}" alt="project 2">
         <div class="modal-details">
             <p class="firstPara">${descriptionlong}</p>
-            
-            <p class="firstPara">${descriptionlong}</p>
-            <div class="modal-footer">
-                <ul class="lang">
+            <ul class="lang">
                 ${generateTechnologyTags(technologies)}
                 </ul>
+                </div>
+            <div class="modal-footer">
+            <p class="firstPara">${descriptionlong}</p>
                 <div class="btn-group">
                     <a href="${linkToLiveVersion}" class="buttonpop">See live</a>
                     <a href="${linkToSource}" class="buttonpop">See source</a>
                 </div>
             </div>
-        </div>
+        
     </div>
 </div>
   `;
