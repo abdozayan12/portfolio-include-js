@@ -519,7 +519,7 @@
     border-top: 1px solid #c1c7d0;
     padding: 1rem 0;
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     gap: 10px;
   }
