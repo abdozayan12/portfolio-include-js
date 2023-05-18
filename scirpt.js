@@ -47,3 +47,11 @@ form.addEventListener('click', () => {
 //   document.querySelector('.my-storage').textContent = JSON.stringify(e.storageArea);
 // });
 
+const getData = localStorage.getItem('formData');
+const prefillData = JSON.parse(getData);
+
+if (prefillData !== null) {
+  Name.value = prefillData.Name;
+  emailEl.value = prefillData.emailEl;
+  Text.value = prefillData.Text;
+}
