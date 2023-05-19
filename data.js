@@ -71,7 +71,7 @@ const generateTechnologyTags = (technologies) => {
 };
 
 let output = ' ';
-const popup = ' ';
+// const popup = ' ';
 projectsData.forEach((project) => {
   output += `
       <section class="grid-container">

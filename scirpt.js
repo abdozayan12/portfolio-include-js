@@ -26,4 +26,4 @@ form.addEventListener('submit', (e) => {
   } else {
     form.submit();
   }
-
+});
