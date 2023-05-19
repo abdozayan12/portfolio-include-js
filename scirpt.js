@@ -1,6 +1,8 @@
 const humburger = document.querySelector('.humburger');
 const navMenu = document.querySelector('.new');
 
+// nav menu //
+
 humburger.addEventListener('click', () => {
   humburger.classList.toggle('active');
   navMenu.classList.toggle('active');
@@ -25,33 +27,3 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
-
-// preserve data in the browser//
-
-const Name = document.getElementById('name');
-const emailEl = document.getElementById('email');
-const Text = document.getElementById('textArea');
-
-form.addEventListener('click', () => {
-  const formData = {
-    Name: document.getElementById('name').value,
-    emailEl: document.getElementById('email').value,
-    Text: document.getElementById('textArea').value,
-  };
-  localStorage.setItem('formData', JSON.stringify(formData));
-});
-// window.addEventListener('form', (e) => {
-//   document.querySelector('.my-key').textContent = e.key;
-//   document.querySelector('.my-old').textContent = e.oldValue;
-//   document.querySelector('.my-new').textContent = e.newValue;
-//   document.querySelector('.my-storage').textContent = JSON.stringify(e.storageArea);
-// });
-
-const getData = localStorage.getItem('formData');
-const prefillData = JSON.parse(getData);
-
-if (prefillData !== null) {
-  Name.value = prefillData.Name;
-  emailEl.value = prefillData.emailEl;
-  Text.value = prefillData.Text;
-}
