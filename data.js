@@ -1,6 +1,21 @@
 const projectsData = [
-  {
+   {
     id: '01',
+    name: 'Abd elhakim',
+    role: 'Full stack Dev',
+    platform: 'Web',
+    year: '2023',
+    description:
+      'The Conference Page is a responsive and dynamic website created using HTML, CSS and javascript. ',
+    descriptionlong:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ',
+    featuredImage: 'images/Untitled design.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    linkToLiveVersion: 'https://abdozayan12.github.io/capstone-project---Conference-page/',
+    linkToSource: 'https://github.com/abdozayan12/capstone-project---Conference-page',
+  },
+  {
+    id: '02',
     name: 'Tonia',
     role: 'Back end Dev',
     platform: 'Web',
@@ -15,7 +30,7 @@ const projectsData = [
     linkToSource: '#',
   },
   {
-    id: '02',
+    id: '03',
     name: 'Tonia',
     role: 'Developer',
     platform: 'Web',
@@ -30,7 +45,7 @@ const projectsData = [
     linkToSource: '#',
   },
   {
-    id: '03',
+    id: '04',
     name: 'Tonia',
     role: 'Developer',
     platform: 'Web',
@@ -45,7 +60,7 @@ const projectsData = [
     linkToSource: '#',
   },
   {
-    id: '04',
+    id: '05',
     name: 'Tonia',
     role: 'Developer',
     platform: 'Web',
