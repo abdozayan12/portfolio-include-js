@@ -1,0 +1,257 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-links {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links:hover {
+    color: #ccc;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  /* Main Section */
+  .first {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .boxHead {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .boxHead h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .boxHead p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .boxConnect {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .boxSocial {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .boxSocial li {
+    margin: 0 10px;
+  }
+  
+  .boxSocial img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Portfolio Section */
+  .works {
+    padding: 40px 0;
+  }
+  
+  #project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .project-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* About Section */
+  .about {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .section2 {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .myself {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .AboutMyself {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .boxConnect2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .boxSociall2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .buttonButton2 {
+    background-color: #ccc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttonButton2:hover {
+    background-color: #999;
+  }
+  
+  .languag {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .langu img {
+    margin: 0 10px;
+  }
+  
+  .fLi {
+    list-style: none;
+    display: flex;
+  }
+  
+  .fLi li {
+    margin: 0 10px;
+  }
+  
+  .fLi2 {
+    list-style: none;
+    display: flex;
+  }
+  
+  .fLi2 li {
+    margin: 0 10px;
+  }
+  
+  /* Contact Section */
+  .bgWhite {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+  }
+  
+  .contactMe {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contactMe h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .contactMe p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .form1 {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .textArea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .buttonThree {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttonThree:hover {
+    background-color: #222;
+  }
