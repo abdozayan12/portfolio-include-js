@@ -1,14 +1,14 @@
 const projectsData = [
    {
     id: '01',
-    name: 'Abd elhakim',
-    role: 'Full stack Dev',
+    name: 'Conference-page',
+    role: 'Front End Dev',
     platform: 'Web',
     year: '2023',
     description:
       'The Conference Page is a responsive and dynamic website created using HTML, CSS and javascript. ',
     descriptionlong:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ',
+      'The Conference Page is a responsive and dynamic website created using HTML, CSS and javascript.',
     featuredImage: 'images/Untitled design.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://abdozayan12.github.io/capstone-project---Conference-page/',
@@ -16,25 +16,25 @@ const projectsData = [
   },
   {
     id: '02',
-    name: 'Tonia',
-    role: 'Back end Dev',
+    name: 'Countries Explorer',
+    role: 'Front end Dev',
     platform: 'Web',
-    year: '2022',
+    year: '2023',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
     descriptionlong:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ',
     featuredImage: 'images/Portfolio.svg',
     technologies: ['HTML', 'CSS', 'ReactJs'],
-    linkToLiveVersion: '#',
-    linkToSource: '#',
+    linkToLiveVersion: 'https://react-capstone-project-05mk.onrender.com/',
+    linkToSource: 'https://github.com/abdozayan12/REACT-CAPSTONE-PROJECT',
   },
   {
     id: '03',
-    name: 'Tonia',
-    role: 'Developer',
+    name: 'Dish-Discovery',
+    role: 'Front End Dev',
     platform: 'Web',
-    year: '2022',
+    year: '2023',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     descriptionlong:
@@ -42,11 +42,11 @@ const projectsData = [
     featuredImage: 'images/Multi.svg',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
     linkToLiveVersion: '#',
-    linkToSource: '#',
+    linkToSource: 'https://github.com/abdozayan12/Dish-Discovery',
   },
   {
     id: '04',
-    name: 'Tonia',
+    name: 'Abd elhakim',
     role: 'Developer',
     platform: 'Web',
     year: '2022',
@@ -61,7 +61,7 @@ const projectsData = [
   },
   {
     id: '05',
-    name: 'Tonia',
+    name: 'Abd elhakim',
     role: 'Developer',
     platform: 'Web',
     year: '2022',
