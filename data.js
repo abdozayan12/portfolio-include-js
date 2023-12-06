@@ -40,7 +40,7 @@ const projectsData = [
     descriptionlong:
       'The Meal DB, is a web application that utilizes an external API to provide a comprehensive database of meals, complete with information such as name, image, and description. Users can interact with the meals by liking or commenting on them. Our team collaborated using a Kanban board to ensure successful project delivery.',
     featuredImage: 'images/dish.png',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://abdozayan12.github.io/Dish-Discovery/dist/',
     linkToSource: 'https://github.com/abdozayan12/Dish-Discovery',
   },
