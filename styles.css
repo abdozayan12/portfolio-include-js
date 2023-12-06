@@ -129,6 +129,10 @@
     margin-top: 112px;
   }
 
+  .cont1 {
+    padding-top: 60px;
+  }
+
   .grid-container {
     display: grid;
     background-color: #fff;
