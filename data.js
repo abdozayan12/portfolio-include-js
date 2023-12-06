@@ -162,11 +162,11 @@ const generateProjectPopUps = (projectDetails) => {
             <p class="secondPara">${descriptionlong}</p>
                 <div class="btn-group">
                   <div class="bt-img">
-                    <a href="${linkToLiveVersion}" class="buttonpop">See live <img src="images/Icon.svg"></a>
+                    <a href="${linkToLiveVersion}" target="_blank" class="buttonpop">See live <img src="images/Icon.svg"></a>
                     
                   </div> 
                   <div class="bt-img"> 
-                    <a href="${linkToSource}" class="buttonpop">See source <img src="images/Vector.svg"></a>
+                    <a href="${linkToSource}" target="_blank" class="buttonpop">See source <img src="images/Vector.svg"></a>
                     
                   </div>
                 </div>
