@@ -759,6 +759,10 @@
     padding: 0 24px;
   }
 
+  .cont1 {
+    padding-top: 60px;
+  }
+
   .grid-container {
     display: grid;
     background-color: #fff;
