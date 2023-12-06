@@ -21,9 +21,9 @@ const projectsData = [
     platform: 'Web',
     year: '2023',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
+      'Explore The Countries" is a web application built using React and Redux that displays information about different countries.',
     descriptionlong:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ',
+      'Explore The Countries" is a web application built using React and Redux that displays information about different countries. It consists of the following main pages: Homepage and Details. The project provides a user-friendly interface for users to search, sort, and view details about different countries.',
     featuredImage: 'images/country.png',
     technologies: ['HTML', 'CSS', 'ReactJs'],
     linkToLiveVersion: 'https://react-capstone-project-05mk.onrender.com/',
@@ -36,9 +36,9 @@ const projectsData = [
     platform: 'Web',
     year: '2023',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'The Meal DB, is a web application that utilizes an external API to provide a comprehensive database of meals.',
     descriptionlong:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
+      'The Meal DB, is a web application that utilizes an external API to provide a comprehensive database of meals, complete with information such as name, image, and description. Users can interact with the meals by liking or commenting on them. Our team collaborated using a Kanban board to ensure successful project delivery.',
     featuredImage: 'images/dish.png',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
     linkToLiveVersion: 'https://abdozayan12.github.io/Dish-Discovery/dist/',
