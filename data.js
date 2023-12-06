@@ -54,7 +54,7 @@ const projectsData = [
       'To-do list" is a tool that helps to organize a day which is built using ES6 and Webpack.',
     descriptionlong:
       'To-do list" is a tool that helps to organize a day which is built using ES6 and Webpack. It simply lists the tasks that a user wants to do and allows them to mark the tasks as completed or manage…',
-    featuredImage: 'images/FACEBOOK.svg',
+    featuredImage: 'images/todo.png',
     technologies: ['HTML', 'CSS', 'JavaScript', 'webpack'],
     linkToLiveVersion: 'https://abdozayan12.github.io/To-Do-List/dist/',
     linkToSource: 'https://github.com/abdozayan12/To-Do-List',
@@ -69,10 +69,10 @@ const projectsData = [
       'Space Travelers Hub, a web application that connects adventurous travelers with commercial and scientific space travel services.',
     descriptionlong:
       'Space Travelers Hub, a web application that connects adventurous travelers with commercial and scientific space travel services. The app is built on an external API and allows users to book rockets and join selected space missions. Our team collaborated using a kanban board to ensure a successful project delivery.',
-    featuredImage: 'images/space-travelers.png',
+    featuredImage: 'images/space.png',
     technologies: ['React', 'CSS', 'Redux', 'External API'],
-    linkToLiveVersion: '#',
-    linkToSource: '',
+    linkToLiveVersion: 'https://space-traveler-1wv4.onrender.com/',
+    linkToSource: 'https://github.com/abdozayan12/space_travelers',
   },
   {
     id: '06',
@@ -142,38 +142,35 @@ const generateProjectPopUps = (projectDetails) => {
 
   return `
     <div class="container">
-    <div class="modal-card">
+      <div class="modal-card">
         <div class="popup-card-header">
           <h1 class="tonic">${name}</h1>
           <i id="close-modal-popup" class="fas fa-times"></i>
         </div>
         <ul class="listItem">
-            <li>${platform}</li>
-            <li>${role}</li>
-            <li>${year}</li>
+          <li>${platform}</li>
+          <li>${role}</li>
+          <li>${year}</li>
         </ul>
         <img src="${featuredImage}" alt="project 2">
         <div class="modal-details">
-            <ul class="lang">
-                ${generateTechnologyTags(technologies)}
-                </ul>
-                </div>
-            <div class="modal-footer">
-            <p class="secondPara">${descriptionlong}</p>
-                <div class="btn-group">
-                  <div class="bt-img">
-                    <a href="${linkToLiveVersion}" target="_blank" class="buttonpop">See live <img src="images/Icon.svg"></a>
-                    
-                  </div> 
-                  <div class="bt-img"> 
-                    <a href="${linkToSource}" target="_blank" class="buttonpop">See source <img src="images/Vector.svg"></a>
-                    
-                  </div>
-                </div>
+          <ul class="lang">
+            ${generateTechnologyTags(technologies)}
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <p class="secondPara">${descriptionlong}</p>
+          <div class="btn-group">
+            <div class="bt-img">
+              <a href="${linkToLiveVersion}" class="buttonpop" id="live-version-link">See live <img src="images/Icon.svg"></a>
+            </div> 
+            <div class="bt-img"> 
+              <a href="${linkToSource}" class="buttonpop" id="source-link">See source <img src="images/Vector.svg"></a>
             </div>
-        
+          </div>
+        </div>
+      </div>
     </div>
-</div>
   `;
 };
 
@@ -195,17 +192,30 @@ project.addEventListener('click', (e) => {
   }
 });
 
+const handleLiveVersionClick = (e) => {
+  e.preventDefault();
+  // Add your custom functionality here, such as opening the live version link in a new tab or redirecting to it.
+  window.open(e.target.href, '_blank');
+};
+
+const handleSourceClick = (e) => {
+  e.preventDefault();
+  // Add your custom functionality here, such as opening the source code link in a new tab or redirecting to it.
+  window.open(e.target.href, '_blank');
+};
+
 displayPopup.addEventListener('click', (e) => {
   e.preventDefault();
   if (e.target.id === 'close-modal-popup') {
     displayPopup.style.display = 'none';
     document.body.style.overflow = 'auto';
   }
-});
 
-window.onclick = (e) => {
-  if (e.target === displayPopup) {
-    displayPopup.style.display = 'none';
-    document.body.style.overflow = 'auto';
+  if (e.target.id === 'live-version-link') {
+    handleLiveVersionClick(e);
   }
-};
+
+  if (e.target.id === 'source-link') {
+    handleSourceClick(e);
+  }
+});
