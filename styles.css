@@ -9,6 +9,44 @@
   font-family: "Poppins", sans-serif;
 }
 
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
 @media (min-width: 768px) {
   body {
     font-family: "Poppins", sans-serif;
@@ -131,6 +169,7 @@
 
   .cont1 {
     padding-top: 60px;
+    animation: slideIn 2s ease-in-out;
   }
 
   .grid-container {
@@ -145,11 +184,23 @@
     border-radius: 24px;
     padding: 15px;
     margin-top: 104px;
+    animation: fadeIn 2s ease-in-out;
   }
 
   .grid-container img {
     width: 100%;
   }
+
+  .grid-item0 img {
+    animation: fadeIn 2s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.grid-item0 img:hover {
+  transform: scale(1.1);
+}
 
   .modal img {
     width: 100%;
@@ -366,10 +417,13 @@
     padding-bottom: 13px;
   }
 
-  .langu {
-    display: flex;
-    flex-direction: column;
-  }
+  .front-end {
+    animation: slideInFromLeft 2s ease-in-out;
+}
+
+.back-end {
+    animation: slideInFromRight 2s ease-in-out;
+}
 
   .languag .fLi {
     display: flex;
